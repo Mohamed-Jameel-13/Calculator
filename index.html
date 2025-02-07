@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>CalcPro</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>World's Most Powerful Calculator</h2>
+            <p>Calculate with precision and style</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="calculator-container">
+            <div class="display">
+                <input type="text" id="result" readonly>
+                <input type="text" id="history" readonly>
+            </div>
+            <div class="buttons">
+                <!-- Scientific buttons -->
+                <button class="sci-btn">sin</button>
+                <button class="sci-btn">cos</button>
+                <button class="sci-btn">tan</button>
+                <button class="operator">^</button>
+                
+                <button class="operator">(</button>
+                <button class="operator">)</button>
+                <button class="sci-btn">log</button>
+                <button class="operator">%</button>
+                
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">÷</button>
+                
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">×</button>
+                
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">-</button>
+                
+                <button class="number">0</button>
+                <button class="operator">.</button>
+                <button class="sci-btn">√</button>
+                <button class="operator">+</button>
+                
+                <button class="clear">C</button>
+                <button class="delete">⌫</button>
+                <button class="sci-btn">π</button>
+                <button class="equal">=</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="quotes">
+        <div class="quote-container">
+            <p class="quote-text">"Mathematics is the music of reason." - James Joseph Sylvester</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About CalcPro</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-calculator"></i>
+                <h3>Advanced Functions</h3>
+                <p>Scientific calculations at your fingertips</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Beautiful Design</h3>
+                <p>Modern and intuitive interface</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Smart Features</h3>
+                <p>History tracking and memory functions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

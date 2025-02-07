@@ -1,0 +1,201 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1587145820266-a5955ee5f2bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.calculator-section {
+    padding: 30px 20px;  /* Reduced from 50px to 30px */
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;  /* Reduced from 20px to 15px */
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    width: 400px;
+}
+
+.display {
+    margin-bottom: 15px;  /* Reduced from 20px to 15px */
+}
+
+#history {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    font-size: 1rem;
+}
+
+#result {
+    width: 100%;
+    height: 50px;  /* Reduced from 60px to 50px */
+    font-size: 2.2rem;  /* Reduced from 2.5rem to 2.2rem */
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-align: right;
+    padding: 8px;  /* Reduced from 10px to 8px */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;  /* Reduced from 20px to 15px */
+    border: none;
+    border-radius: 8px;  /* Reduced from 10px to 8px */
+    font-size: 1.1rem;  /* Reduced from 1.2rem to 1.1rem */
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button:hover {
+    background: rgba(0, 255, 136, 0.2);
+    transform: scale(1.05);
+}
+
+.operator {
+    background: rgba(255, 165, 0, 0.2);
+}
+
+.equal {
+    background: #00ff88;
+    color: #000;
+}
+
+.clear {
+    background: #ff4646;
+}
+
+.quotes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #00ff88;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .calculator-container {
+        width: 100%;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
